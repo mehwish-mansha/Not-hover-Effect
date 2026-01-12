@@ -1,0 +1,34 @@
+body{
+    background: #1e272e;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-top: 50px ;
+}
+
+img{
+    width: 200px;
+    border-radius: 10px;
+    -webkit-box-reflect: below 2.5px linear-gradient(transparent, transparent, rgba(3,3,3,0.2));
+    border: 3px ridge #bfd1eb2d;
+    margin: 5px ;
+}
+
+.card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.container:hover > :not(:hover){
+    opacity: 0.3;
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
